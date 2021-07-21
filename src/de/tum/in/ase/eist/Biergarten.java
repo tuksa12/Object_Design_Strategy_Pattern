@@ -37,6 +37,7 @@ public class Biergarten {
         // TODO: Enforce that the guest uses the appropriate registration option
 
 
+
         guests.add(guest.fillOutForm());
     }
 
