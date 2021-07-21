@@ -12,6 +12,8 @@ import java.util.Base64;
  */
 public class AntiCovidApp implements RegistrationClient{
 
+    //Im not sure if the push worked
+
     public GuestEntry registerGuest(Guest guest) {
         String guestModelNumber = guest.getPhone().getModelNumber();
         String guestBrand = guest.getPhone().getBrand();
