@@ -30,8 +30,12 @@ public class Biergarten {
      * @param guest who wants to visit the biergarten
      */
     public void visit(Guest guest) {
+        BiergartenPolicy biergartenPolicy = new BiergartenPolicy(guest.getPhone());
+        biergartenPolicy.configure();
+        biergartenPolicy.registrationClient.registerGuest(guest);
 
         // TODO: Enforce that the guest uses the appropriate registration option
+
 
         guests.add(guest.fillOutForm());
     }
